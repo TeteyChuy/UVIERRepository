@@ -1,0 +1,64 @@
+body
+{
+    color:rgb(14, 12, 12);
+    text-align:center;
+    font-family:arial;
+    font-size:16px;
+    margin:0;
+    padding:0
+}
+/*
+#container mainly
+{
+    width:70%;
+    padding:1em;
+    text-align:left;
+    border:10px solid rgba(17, 6, 161, 0.726);
+    margin:0 auto
+}
+p#renglon2
+{
+    color:rgb(17, 11, 12);
+    text-align:center;
+    font-family:arial;
+    font-size:16px;
+    margin:0;
+    padding:0
+}*/
+h1.para
+{
+    color:rgb(124, 18, 245);
+    text-align:center;
+    font-family:arial;
+    font-size:16px;
+    margin:0;
+    padding:0
+}
+p#alert
+{
+    color:rgb(245, 18, 67);
+    text-align:center;
+    font-family:arial;
+    font-size:16px;
+    margin:0;
+    padding:0
+}
+
+p#resul
+{
+    color:cornflowerblue;
+    text-align:center;
+    font-family:arial;
+    font-size:16px;
+    margin:0;
+    padding:0
+}
+p#numero_de_cables
+{
+    color:rgb(245, 18, 67);
+    text-align:center;
+    font-family:arial;
+    font-size:16px;
+    margin:0;
+    padding:0
+}
