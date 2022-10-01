@@ -10,15 +10,18 @@
 </head>
 <body>
     
-    <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-        
-        <a href="index.html" class="font-medium text-red-500 hover:text-gray-900">Regresar <br><br></a>
+    <div>
+        <a href="index.html" class="main-page">Regresar </a> <br>
     </div>
+
+
+        <fieldset class="fiel-set">
+          <legend>Calculo de tubería</legend>
     <h1 class="para">
         <p> Número de cables conductores<br> </p>
         <input type="number" id="numCables" value="">
         <p id="numero_de_cables"> </p>
-        <p>Calibre del cable <br> </p>
+        <p>Calibre del cable (8fv-7, 6fv-9, 4fv-11) <br> </p>
         <input type="number" id="cal">
         <p id="alert" > </p>
         <p id="renglon2">tipo de tubería EMT (delgada),<br> IMC (gruesa) o RMC (gruesa 80) <br> </p>
@@ -29,9 +32,10 @@
         <p id="resul"> </p>
         <form action="">
         <button id="limpíar"> limpiar </button>
-        </form>
     </h1>
+        </fieldset>
     <script src="tubjs.js" charset="utf-8"> </script>
+
 </body>
 </html>
 

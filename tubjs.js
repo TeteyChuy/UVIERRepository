@@ -73,7 +73,7 @@ function start (){
 
 function getData()
         {
-        numCables1 = parseInt (numCables.value);
+        numCables1 = math.floor(parseInt (numCables.value));
         let prov = isNaN(numCables1);
         //console.log(prov)
                 if (prov == true){ numCables1 = 0}
@@ -88,6 +88,9 @@ function getData()
                 case 4: cal1 =62.786; break;
                 case 6: cal1 = 46.833; break;
                 case 8: cal1 = 28.218; break;
+                case 7: cal1 = 50.265; alert.innerHTML = "Fotovoltaico" ; break;
+                case 9: cal1 = 32.17; alert.innerHTML = "Fotovoltaico" ; break;
+                case 11: cal1 = 25.517; alert.innerHTML = "Fotovoltaico" ; break;
                 case 10: cal1 = 15.693; break;
                 case 12: cal1 = 11.708; break;
                 case 14: cal1 = 8.962; break;

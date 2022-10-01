@@ -3,28 +3,28 @@ body
     color:rgb(14, 12, 12);
     text-align:center;
     font-family:arial;
-    font-size:16px;
-    margin:0;
-    padding:0
+    font-size:20px;
+    margin:10;
+    padding:0;
+    /* background-color: aqua; */
+    align-items: center;
 }
-/*
-#container mainly
-{
-    width:70%;
-    padding:1em;
-    text-align:left;
-    border:10px solid rgba(17, 6, 161, 0.726);
-    margin:0 auto
-}
-p#renglon2
-{
-    color:rgb(17, 11, 12);
-    text-align:center;
+
+.main-page{
+    color:rgb(113, 19, 221);
+    border: 25px;
+    border-color: blueviolet;
+    background-color: rgb(160, 250, 142);
+    border-radius: 10px;
     font-family:arial;
-    font-size:16px;
-    margin:0;
-    padding:0
-}*/
+    font-size:25px;
+    padding:5px;
+    justify-content: right;
+    position: relative;
+}
+
+
+
 h1.para
 {
     color:rgb(124, 18, 245);
@@ -61,4 +61,53 @@ p#numero_de_cables
     font-size:16px;
     margin:0;
     padding:0
+}
+
+.firstseccion {
+    color:rgb(13, 10, 17);
+    border: 25px;
+    background-color: rgb(230, 219, 219);
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 60%;
+}
+
+.box-of-selector{
+    display: flex;
+    background-color: rgb(174, 168, 235);
+    border-radius: 20px;
+    justify-content:space-around;
+    align-items: center;
+    border-width: 10px;
+    margin: 10px;
+    margin-left: 10;
+    margin-right: 10;
+    padding: auto;
+}
+
+.secondseccion{
+    color:rgb(170, 211, 24);
+    border: 25px;
+    background-color: rgb(122, 41, 41);
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 60%;
+}
+
+.thirdseccion{
+    color:rgb(57, 71, 4);
+    border: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    /* padding: 10px; */
+    font-size: 75%;
+}
+
+.inactive{
+    display: none;
+}
+
+.selector2{
+    cursor: pointer;
 }

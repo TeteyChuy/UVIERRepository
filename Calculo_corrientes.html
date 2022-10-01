@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div>
+        <a href="index.html" class="main-page">Regresar </a> <br>
+    </div>
+
+<!-- primera parte -->
+    <form id="form1">
+        <fieldset class="fiel-set">
+          <legend>Calculo de corriente</legend>
+
+  <!-- number of fases   -->
+        <div class="box-of-selector">
+            <div class="firstseccion">
+                <input type="radio" id="contactChoice1"
+                name="numFases" value="1" checked>
+                <label for="contactChoice1" id="text1">1 fase</label>
+            </div>
+            <div class="firstseccion">
+                <input type="radio" id="contactChoice2"
+                name="numFases" value="2">
+                <label for="contactChoice2">2 Fases con Neutro</label>
+            </div>    
+            <div class="firstseccion">
+                <input type="radio" id="contactChoice3"
+                name="numFases" value="3">
+                <label for="contactChoice3">2 Fases sin Neutro</label>
+            </div>
+            <div class="firstseccion">
+              <input type="radio" id="contactChoice4"
+              name="numFases" value="4">
+              <label for="contactChoice4">3 fases</label>
+          </div>
+          </div>
+          <br>
+  <!-- voltaje -->
+          <div class="box-of-selector">  
+            <div class="secondseccion">
+                <input type="radio" id="contactChoice1"
+                name="voltaje" value="220" checked>
+                <label for="contactChoice1">220V</label>
+            </div>
+            <div class="secondseccion">
+                <input type="radio" id="contactChoice2"
+                name="voltaje" value="440">
+                <label for="contactChoice2">400V</label>
+            </div>    
+        </div>
+          <div class="firstseccion">  
+          <p>Ingresa potencia real <br>
+            <input type="num" id="watts" value="0"> Watts</p> <br>
+              <button type="submit">Calcular</button>
+          </div>
+        </div>
+        </fieldset>
+      </form>
+        <p id="alert"></p>
+      <pre id="log"></pre>
+
+
+
+      <!-- Segunda parte -->
+    
+      <fieldset class="fiel-set">
+        <legend>Calculo de corriente corregida</legend>
+            <div>
+                <form id="form2">
+                    <p class="thirdseccion"> Selecciona el tipo de entrada</p>
+                    <div class="box-of-selector1">  
+                        <div class="secondseccion">
+                            <input type="radio" id="contactChoice1"
+                            name="kindOfEntry" value="1" checked>
+                            <label for="contactChoice1">corriente</label>
+                        </div>
+                        <div class="secondseccion">
+                            <input type="radio" id="contactChoice2"
+                            name="kindOfEntry" value="2">
+                            <label for="contactChoice2">HP</label>
+                        </div>    
+                    </div>
+
+                <p class="thirdseccion">Ingrese corriente o HP del motor</p>
+                <input type="number" id="current2" value="0" step="any">
+                <p class="alert2" id="alert"></p>
+                
+
+                <p class="thirdseccion">Indique el factor de agrupamiento</p>
+                <p class="thirdseccion selector2" id="tabla310A" > 
+                    recuerde utilizar la tabla 310-15(b)(3)(a)</p>
+                    <aside id="tab-A" class="inactive">
+                        <img src="/Tabla310-15a.jpg">
+                    </aside>
+                <input type="number" id="agrupFactor" value="1" step="any"> <br>
+                
+                <p>Calculo de factor de temperatura</p>
+                <p class="thirdseccion">Indique temperatura ambiente</p>
+                <p class="thirdseccion selector2" id="tabla310B" > 
+                    recuerde utilizar la tabla tabla 310-15(b)(3)(b) </p>
+                    <aside id="tab-B" class="inactive">
+                        <img src="/Tabla310-15.jpg">
+                    </aside>
+                <input type="number" id="tempFactor" value="26"> <br>
+            
+                <button type="submit">Calcular</button>
+            </div>
+            </form>
+        </fieldset>
+        <pre id="log1"></pre>
+    <script src="current.js"></script>
+</body>
+</html>
