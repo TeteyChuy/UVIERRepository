@@ -135,8 +135,8 @@ function calCurrent (){
             currentFT = temp60[prov1];
           }
       currentTotal = currentFA / currentFT;
-      log1.innerHTML = `La corriente al 125% es ${current125} A <br>
-       La corriente aplicando Factor de Agrupamiento es ${currentFA} A <br>
-       El factor de temperatura es ${currentFT} <br>
-       La corriente corregida final es ${currentTotal} A`
+      log1.innerHTML = `La corriente al 125% es ${current125} A 
+      <br>La corriente aplicando Factor de Agrupamiento es ${currentFA} A 
+      <br>El factor de temperatura es ${currentFT} 
+      <br>La corriente corregida final es ${currentTotal} A`
   }

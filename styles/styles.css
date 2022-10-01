@@ -111,3 +111,15 @@ p#numero_de_cables
 .selector2{
     cursor: pointer;
 }
+
+pre#log1{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color:rgb(57, 71, 4);
+    border: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    /* padding: 10px; */
+    font-size: 75%;
+}
