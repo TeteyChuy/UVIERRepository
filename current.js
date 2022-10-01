@@ -118,7 +118,7 @@ function calCurrent (){
         else {
           current125 = current3 *1.25;
         }
-      currentFA = current125 * parseFloat(agrupFactor.value);
+      currentFA = current125 / parseFloat(agrupFactor.value);
       let prov = parseInt(tempFactor.value);
       let index;
           for (const i of temperature) {
@@ -134,7 +134,7 @@ function calCurrent (){
           else {
             currentFT = temp60[prov1];
           }
-      currentTotal = currentFA * currentFT;
+      currentTotal = currentFA / currentFT;
       log1.innerHTML = `La corriente al 125% es ${current125} A <br>
        La corriente aplicando Factor de Agrupamiento es ${currentFA} A <br>
        El factor de temperatura es ${currentFT} <br>
