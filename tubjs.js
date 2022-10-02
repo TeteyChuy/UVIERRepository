@@ -73,7 +73,7 @@ function start (){
 
 function getData()
         {
-        numCables1 = math.floor(parseInt (numCables.value));
+        numCables1 = Math.floor(parseInt (numCables.value));
         let prov = isNaN(numCables1);
         //console.log(prov)
                 if (prov == true){ numCables1 = 0}
